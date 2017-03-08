@@ -1,0 +1,42 @@
+<div class="why">
+<h2>Contact US</h2>
+</div>
+<div class="jumbotron" style="margin-top: 170px;">
+
+
+<form name="form" class="form-horizontal" novalidate role="form" id="contact_form" ng-submit="addContact(form)" method="POST" enctype="multipart/form-data">
+	<div class="form-group" ng-class="{'has-error':form._id.$dirty&&form._id.$error.required}">
+		<label for="name" class="col-sm-3 control-label">Your name:</label>
+		<div class="col-sm-9">
+		<input id="name" class="form-control" name="name" type="text" value="" size="30" name="name" ng-model="contact_us.name" ng-required="false" class="form-control" id="name" placeholder="Name"/>
+		</div>
+	</div>
+	<div class="form-group" ng-class="{'has-error':form.email.$dirty&&form.email.$error.required}">
+		<label for="email" class="col-sm-3 control-label">Email Address:</label>
+		<div class="col-sm-9">
+		<input id="email" class="form-control" name="email" type="text" value="" size="30" ng-model="contact_us.email" ng-required="false" class="form-control" id="email" placeholder="Email Address"/>
+		</div>
+	</div>
+	<div class="form-group" ng-class="{'has-error':form.subject.$dirty&&form.subject.$error.required}">
+		<label for="subject" class="col-sm-3 control-label">Subject:</label>
+		<div class="col-sm-9">
+		<input id="subject" class="form-control" name="subject" type="text" value="" size="30" ng-model="contact_us.subject" ng-required="false" class="form-control" id="subject" placeholder="Subject"/>
+		</div>
+	</div>
+	<div class="form-group" ng-class="{'has-error':form.message.$dirty&&form.message.$error.required}">
+		<label for="message" class="col-sm-3 control-label">Message:</label>
+		<div class="col-sm-9">
+		<textarea rows="10" cols="50" id="message" class="form-control" name="message" type="text" ng-model="contact_us.message" ng-required="false" class="form-control" placeholder="Message"></textarea>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4 col-sm-push-3">
+		<button type="submit" class="btn btn-primary btn-lg">Send</button>
+
+		<button type="button" class="btn btn-default btn-lg">Cancel</button>
+	</div>
+	</div>
+	
+	
+</form>	
+</div>					

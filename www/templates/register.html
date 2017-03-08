@@ -1,0 +1,100 @@
+<style type="text/css">
+	.form-group{
+		padding: 10px;
+	}
+</style>
+<div class="jumbotron">
+<div class="row">
+	<div class="col-sm-8 col-sm-push-4">
+<h1>Register</h1>
+</div>
+</div>
+<form name="form" class="form-horizontal" novalidate role="form" id="contact_form" ng-submit="registerUser(form)" method="POST" enctype="multipart/form-data">
+	<div class="form-group" ng-class="{'has-error':form.name.$dirty&&form.name.$error.required}">
+		<label for="name" class="col-sm-3 control-label">Full name:</label>
+		<div class="col-sm-9">
+		<input id="name" class="form-control" name="name" type="text" value="" size="30" name="name" ng-model="user.name" ng-required="false" placeholder="Name"/>
+		</div>
+	</div>
+	<div class="form-group" ng-class="{'has-error':form.email.$dirty&&form.email.$error.required}">
+		<label for="email" class="col-sm-3 control-label">Email Address:</label>
+		<div class="col-sm-9">
+		<input id="email" class="form-control" name="email" type="text" value="" size="30" ng-model="user.email" ng-required="false" placeholder="Email Address"/>
+		</div>
+	</div>
+	<div class="form-group" ng-class="{'has-error':form.phone.$dirty&&form.phone.$error.required}">
+		<label for="phone" class="col-sm-3 control-label">Cell Phone:</label>
+		<div class="col-sm-9">
+		<input id="phone" class="form-control" name="phone" type="text" value="" size="30" ng-model="user.phone" ng-required="false" placeholder="Phone Number"/>
+		</div>
+	</div>
+	<div class="form-group" ng-class="{'has-error':form.school.$dirty&&form.school.$error.required}">
+		<label for="school" class="col-sm-3 control-label">School:</label>
+		<div class="col-sm-9">
+		<input id="school" class="form-control" name="school" type="text" value="" size="30" ng-model="user.school" ng-required="false" placeholder="School"/>
+		</div>
+	</div>
+	<div class="form-group" ng-class="{'has-error':form.grade.$dirty&&form.grade.$error.required}">
+		<label for="grade" class="col-sm-3 control-label">Grade Level:</label>
+		<div class="col-sm-9">
+		<input id="grade" class="form-control" name="grade" type="text" value="" size="30" ng-model="user.grade" ng-required="false" placeholder="Grade Level" />
+		</div>
+	</div>
+
+	<div class="form-group" ng-class="{'has-error':form.laptop.$dirty&&form.laptop.$error.required}">
+		<label for="laptop" class="col-sm-3 control-label">Do you own a laptop:</label>
+		<div class="col-sm-9">
+		<input id="laptop" class="form-control" name="laptop" type="text" value="" size="30" ng-model="user.laptop" ng-required="false" placeholder="Do you own a laptop" />
+		</div>
+	</div>
+
+	<div class="form-group" ng-class="{'has-error':form.experience.$dirty&&form.experience.$error.required}">
+		<label for="experience" class="col-sm-3 control-label">Prior expreience (though absolutely none is required for this class):</label>
+		<div class="col-sm-9">
+		<input id="experience" class="form-control" name="experience" type="text" value="" size="30" ng-model="user.experience" ng-required="false" placeholder="Prior experience"/>
+		</div>
+	</div>
+
+	<div class="form-group" ng-class="{'has-error':form.hear_about_us.$dirty&&form.hear_about_us.$error.required}">
+		<label for="hear_about_us" class="col-sm-3 control-label">How did you hear about us?:</label>
+		<div class="col-sm-9">
+		<input id="hear_about_us" class="form-control" name="hear_about_us" type="text" value="" size="30" ng-model="user.hear_about_us" ng-required="false" placeholder="How did you hear about us"/>
+		</div>
+	</div>
+
+	<div class="form-group" ng-class="{'has-error':form.referrer.$dirty&&form.referrer.$error.required}">
+		<label for="referrer" class="col-sm-3 control-label">If someone referred you, please list his/her name below!:</label>
+		<div class="col-sm-9">
+		<input id="referrer" class="form-control" name="referrer" type="text" value="" size="30" ng-model="user.referrer" ng-required="false"placeholder="Name of person who reffered you" />
+		</div>
+	</div>
+
+	<div class="form-group" ng-class="{'has-error':form.reason.$dirty&&form.reason.$error.required}">
+		<label for="reason" class="col-sm-3 control-label">Why do you want to learn code?:</label>
+		<div class="col-sm-9">
+		<input id="reason" class="form-control" name="reason" type="text" value="" size="30" ng-model="user.reason" ng-required="false" placeholder="Why do you want to learn code"/>
+		</div>
+	</div>
+
+	<div class="form-group" ng-class="{'has-error':form.first_preference.$dirty&&form.first_preference.$error.required}">
+		<label for="first_preference" class="col-sm-3 control-label">Please choose your 1st preference of which class you want to take:</label>
+		<div class="col-sm-9">
+		<input id="first_preference" class="form-control" name="first_preference" type="text" value="" size="30" ng-model="user.first_preference" ng-required="false" placeholder="First preference" />
+		</div>
+	</div>
+
+	<div class="form-group" ng-class="{'has-error':form.second_preference.$dirty&&form.second_preference.$error.required}">
+		<label for="second_preference" class="col-sm-3 control-label">Please choose your 2nd preference of which class you want to take:</label>
+		<div class="col-sm-9">
+		<input id="second_preference" class="form-control" name="second_preference" type="text" value="" size="30" ng-model="user.second_preference" ng-required="false"  placeholder="Second Preference" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4 col-sm-push-3">
+	<button type="submit" class="btn btn-primary btn-lg">Register</button>
+
+	<button type="button" class="btn btn-default btn-lg">Cancel</button>
+	</div>
+	</div>
+</form>	
+</div>	
